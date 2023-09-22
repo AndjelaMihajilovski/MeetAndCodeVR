@@ -16,8 +16,7 @@ public class VRSwitcher : MonoBehaviour
 
     public GameObject simulator;
     public GameObject openXR;
-    [HideInInspector]
-    public VRSetup activeVRAvatarSetup;
+
 
     public void Awake()
     {
@@ -35,18 +34,12 @@ public class VRSwitcher : MonoBehaviour
         {
             simulator.SetActive(true);
             openXR.SetActive(false);
-            activeVRAvatarSetup = simulator.GetComponent<VRSetup>();
         }
         if (currentVRMode == VRMode.OPENXR)
         {
             simulator.SetActive(false);
             openXR.SetActive(true);
         }
-    }
-
-    public VRSetup GetActiveVRSetup()
-    {
-        return activeVRAvatarSetup;
     }
 
     public VRMode GetActiveVRMode()
