@@ -223,6 +223,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 994911212436266142, guid: e37667b8e66cfe142b08130904df65ca, type: 3}
+      propertyPath: m_GrabMoveAction.m_Reference
+      value: 
+      objectReference: {fileID: -3742484312079769484, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    - target: {fileID: 1238173853256482204, guid: e37667b8e66cfe142b08130904df65ca, type: 3}
+      propertyPath: m_SnapTurn
+      value: 
+      objectReference: {fileID: -8525429354371678379, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    - target: {fileID: 2160408397675033015, guid: e37667b8e66cfe142b08130904df65ca, type: 3}
+      propertyPath: m_SnapTurn
+      value: 
+      objectReference: {fileID: -7374733323251553461, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     - target: {fileID: 4182020778855796682, guid: e37667b8e66cfe142b08130904df65ca, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -281,8 +293,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6269030943688870792, guid: e37667b8e66cfe142b08130904df65ca, type: 3}
       propertyPath: currentVRMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6896367575173119266, guid: e37667b8e66cfe142b08130904df65ca, type: 3}
+      propertyPath: m_DirectionalAnchorRotationAction.m_Reference
+      value: 
+      objectReference: {fileID: -5913262927076077117, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    - target: {fileID: 7253088658558840177, guid: e37667b8e66cfe142b08130904df65ca, type: 3}
+      propertyPath: m_GrabMoveAction.m_Reference
+      value: 
+      objectReference: {fileID: 15759602096507913, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e37667b8e66cfe142b08130904df65ca, type: 3}
 --- !u!1 &1199572726
@@ -374,7 +394,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199572726}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.189, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -470,7 +490,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1922018754}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
