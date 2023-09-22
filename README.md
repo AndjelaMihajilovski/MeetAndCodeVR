@@ -1,4 +1,4 @@
-# XR Interaction Toolkit Examples - Version 2.3.2
+# Meet And Code - XR Interaction Toolkit Examples - Version 2.3.2
 
 ## Introduction
 
