@@ -30,6 +30,9 @@ public class MouseLookOnKey : MonoBehaviour
 
     float rotationY = 0F;
 
+    //Add this
+    public float speed = 5f;
+
     void Update()
     {
         if (Input.GetMouseButton(1))
@@ -55,5 +58,22 @@ public class MouseLookOnKey : MonoBehaviour
                 Camera.main.transform.localEulerAngles = new Vector3(-rotationY, Camera.main.transform.localEulerAngles.y, 0);
             }
         }
+
+        //Add this for movement
+        Movement();
+    }
+
+    public void Movement()
+    {
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
+
+
+        Vector3 movement = new Vector3(horizontalInput, 0f, verticalInput) * speed * Time.deltaTime;
+
+
+        Camera.main.transform.Translate(movement);
+
+        Debug.Log("Movement");
     }
 }

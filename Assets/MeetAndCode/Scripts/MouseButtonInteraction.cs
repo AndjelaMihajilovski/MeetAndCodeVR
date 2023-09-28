@@ -13,10 +13,12 @@ public class MouseButtonInteraction : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, 100))
             {
-                if (hit.transform.GetComponent<XRSimpleInteractable>())
+                //TODO: promeniti u XRGrabInteractable
+                if (hit.transform.GetComponent<XRGrabInteractable>())
                 {
                     SelectEnterEventArgs arg = new SelectEnterEventArgs();
-                    hit.transform.GetComponent<XRSimpleInteractable>().selectEntered.Invoke(arg);
+                    hit.transform.GetComponent<XRGrabInteractable>().selectEntered.Invoke(arg);
+                    Debug.Log("Mouse click");
                 }
             }
         }
